@@ -12,9 +12,9 @@ namespace Tyuiu.SizikovSS.Sprint1.Task2.V25.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            int x = 2;
+            int x = 6;
             var res = ds.ConvertRadsToDegrees(x);
-            Assert.AreEqual(114.592, res);
+            Assert.AreEqual(343.775, res);
         }
     }
 }
