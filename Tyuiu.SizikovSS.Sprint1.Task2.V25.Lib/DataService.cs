@@ -12,8 +12,9 @@ namespace Tyuiu.SizikovSS.Sprint1.Task2.V25.Lib
     {
         public double ConvertRadsToDegrees(int value)
         {   
-            double degree = 57.295;
-            return value * degree;
+            //double rad = 57.2958;
+
+            return (value * 180) / Math.PI;
         }
     }
 }
