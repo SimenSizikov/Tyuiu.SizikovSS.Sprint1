@@ -18,6 +18,10 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1.Lib
                 return value;
 
             }
+            else
+            {
+                return value;
+            }
         }
     }
 }
