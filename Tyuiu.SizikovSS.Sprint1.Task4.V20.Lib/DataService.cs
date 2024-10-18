@@ -12,8 +12,8 @@ namespace Tyuiu.SizikovSS.Sprint1.Task4.V20.Lib
     {
         public double Calculate(double x, double y)
         {
-            var res = (1 + x) / (Math.Abs(x - Math.Sqrt(2 + y)));
-            return res;
+            double res = (1 + x) / (Math.Abs(x - Math.Sqrt(2 + y)));
+            return Math.Round(res, 3);
         }
     }
 }
