@@ -11,10 +11,10 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1.Test
         [TestMethod]
         public void ValidString()
         {
-            string strTest = "1 * 2 * 3";
+            string strTest = "1";
             DataService ds = new DataService();
-            string res = ds.WorkWithTest(strTest);
-            string wait = "123";
+            string res = ds.SymbolCode(strTest);
+            string wait = "49";
             Assert.AreEqual(wait, res);
         }
     }

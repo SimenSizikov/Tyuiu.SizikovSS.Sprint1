@@ -13,7 +13,7 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1.Lib
     {
         public string SymbolCode(string value)
         {
-            string x = 49;
+            string x = "49";
             return x;
         }
     }
