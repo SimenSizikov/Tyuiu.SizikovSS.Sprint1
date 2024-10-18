@@ -31,7 +31,7 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine("Введите символ: ");
-            char str = Console.ReadLine();
+            string str = Console.ReadLine();
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");

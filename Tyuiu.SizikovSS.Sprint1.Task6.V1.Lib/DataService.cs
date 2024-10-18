@@ -15,8 +15,7 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1.Lib
         {
             if (value != ".")
             {
-                char a = Convert.ToChar(value);
-                return a;
+                return value;
 
             }
         }
