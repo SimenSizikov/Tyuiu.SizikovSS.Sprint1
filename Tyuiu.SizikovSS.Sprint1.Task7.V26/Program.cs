@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.SizikovSS.Sprint1.Task6.V1.Lib;
+using Tyuiu.SizikovSS.Sprint1.Task7.V26.Lib;
 
-namespace Tyuiu.SizikovSS.Sprint1.Task6.V1
+namespace Tyuiu.SizikovSS.Sprint1.Task7.V26
 {
     internal class Program
     {
@@ -18,29 +18,34 @@ namespace Tyuiu.SizikovSS.Sprint1.Task6.V1
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работы в C#                                        *");
-            Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #1                                                              *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #26                                                              *");
             Console.WriteLine("* Выполнил: Сизиков Семён Станиславович | РППб-24-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая выводит код введенного пользователем        *");
-            Console.WriteLine("* символа и завершает работу в результате ввода точки                     *");
-            Console.WriteLine("* прошло к этому моменту (например, h=3, если k=13257).                   *");
+            Console.WriteLine("* Написать программу, которая вычисляет математическое выражение          *");
+            Console.WriteLine("*     Sin(x^2) + y    xy - 12                                             *");
+            Console.WriteLine("* z = ------------ - ---------                                            *");
+            Console.WriteLine("*        y + 1       34 + x^2                                             *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine("Введите символ и нажмите <Enter>. ");
-            Console.WriteLine("                                  ");
-            Console.WriteLine("Для завершения введите точку. ");
+            double x, y, z;
 
-            string str = Console.ReadLine();
+            Console.WriteLine("Введите значение x: ");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Введите значение y: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine($"Сивол: {str} Код: {ds.SymbolCode(str)}");
+            Console.WriteLine(ds.Calculate(x,y));
 
             Console.ReadKey();
         }
